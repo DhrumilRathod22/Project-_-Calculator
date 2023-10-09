@@ -1,0 +1,2090 @@
+#include<iostream>
+#include<cmath>
+
+using namespace std;
+
+class normal
+{
+    public:
+    int i, j, val;
+    double n1,n2,n3;
+    int var[15];
+    long double total,t1,ans = 0;
+     
+    
+    
+double add()
+{
+        cout<<endl<<"Enter Value from 2 to 15 : ";
+        cin>>val;
+            for(i=0;i<val;i++)
+            {
+                cout<<endl<<"Enter value for number  " <<(i+1)<<" : ";
+                cin>>var[i];
+                cout<<endl;
+            }
+            for(i=0;i<val;i++)
+            {
+                ans = ans+var[i];
+            }
+            total=ans;
+            cout<<"The Answer of total numbers Added : "<<total<<endl;
+          
+            return 1;
+}
+    
+         double add_2()
+            {
+                cout<<endl<<"Enter numbers :";
+                cin>>t1;
+                total=total+t1;
+                cout<<endl<<endl<<"The Answer of Addition : "<<total<<endl;
+                return 1;
+            }
+            
+double sub()
+{
+        cout<<endl<<"Enter 2 Values  ";
+            for(i=0;i<2;i++)
+            {
+                cout<<endl<<"Enter value for number  " <<(i+1)<<" : ";
+                cin>>var[i];
+                cout<<endl;
+            }
+            ans=var[0];
+            ans = ans-var[1];
+            total=ans;
+            cout<<"The Answer of Subtraction : "<<total<<endl;
+            return 1;
+}
+
+            
+            double sub_2()
+            {
+                cout<<endl<<"Enter numbers :";
+                cin>>t1;
+                total=total-t1;
+                cout<<endl<<endl<<"The Answer of Subtraction : "<<total<<endl;
+               
+                return 1;
+            }
+            
+            
+double mul()
+{
+                cout<<endl<<"Enter 2 Values  "<<endl;
+                cout<<"Enter value for number 1 :";
+                cin>>n1;
+                cout<<endl<<"Enter value for number 2 :";
+                cin>>n2;
+                ans=n1*n2;
+                total=ans;
+            cout<<"The Answer of Multiplication : "<<total<<endl;
+          
+            return 1;
+}
+
+
+                   
+            double mul_2()
+            {
+                cout<<endl<<"Enter numbers :";
+                cin>>t1;
+                total=total*t1;
+                cout<<endl<<endl<<"The Answer of Multiplication : "<<total<<endl;
+               
+                return 1;
+            }
+            
+            
+            
+double di()
+{
+                cout<<endl<<"Enter 2 Values  "<<endl;
+                cout<<"Enter value for number 1 :";
+                cin>>n1;
+                cout<<endl<<"Enter value for number 2 :";
+                cin>>n2;
+                ans=n1/n2;
+                total=ans;
+                cout<<"The Answer of Division : "<<total<<endl;
+          
+            return 1;
+}
+
+
+
+            double di_2()
+            {
+                cout<<endl<<"Enter numbers :";
+                cin>>t1;
+                total=total/t1;
+                cout<<endl<<endl<<"The Answer of Division : "<<total<<endl;
+               
+                return 1;
+            }
+
+
+
+double mod()
+{
+        
+                cout<<endl<<"Enter 2 Values  "<<endl;
+                cout<<"Enter value for number 1 :";
+                cin>>n1;
+                cout<<endl<<"Enter value for number 2 :";
+                cin>>n2;
+                ans=static_cast<int>(n1) % static_cast<int>(n2);
+                total=ans;
+                cout<<" Answer as Reminder : "<<total<<endl;
+          
+            return 1;
+}
+
+
+
+             double mod_2()
+            {
+                cout<<endl<<"Enter numbers :";
+                cin>>t1;
+                total=static_cast<int>(total) % static_cast<int>(t1);
+                cout<<endl<<endl<<"Answer as Reminder : "<<total<<endl;
+               
+                return 1;
+            }
+
+
+   
+};
+
+class sc
+{
+public:
+	
+    double num1, num2;
+    double num3;
+
+
+ void Square()
+ {
+	cout << "Enter a number for square :";
+        cin >> num1;  
+        double sq = num1;
+        cout << "Square of " << sq << " is : " << sq*sq << endl;
+	
+ }
+ void Sqroot() 
+ {
+	cout << "Enter a number for square root calculation :";
+        cin >> num1;
+        double s = sqrt(num1);
+        cout << "Square root of " << num1 << " is : " << s << endl;
+	
+ }
+ void cube()
+ {
+	cout << "Enter a number for Cube :";
+	cin >> num1;
+	double cub = num1;
+	cout << " Cube of " <<cub << " is : " << cub*cub*cub <<endl;
+	
+ }
+void cbroot()
+{
+    	cout << "Enter a number for cube root calculation: ";
+   	    cin >> num1;
+    	double cb = cbrt(num1);
+    	cout<<"cube root of "<< num1 << " is: " << cb <<endl;
+	    
+    
+}
+void power() 
+{
+	cout << "Enter two numbers for power calculation: "<<endl;
+	cout<< " Enter Number 1 :";
+        cin >> num1; 
+        cout<<endl<< "Enter Number 2 :";
+        cin>> num2;
+        double p = pow(num1, num2);
+        cout << "Power: " << p << endl;
+	
+}
+void expo()
+{
+	cout << "Enter a number for exponential calculation:";
+        cin >> num1;
+        double e = exp(num1);
+        cout << "expo:" << e << endl;
+	
+}
+void Log() 
+{
+	cout << "Enter a number for natural logarithm calculation: ";
+        cin >> num1;
+        double l = log(num1);
+        cout << "Natural Logarithm: " << l << endl;
+}
+
+void BaseLog() 
+{
+	cout << "Enter a number for logarithm with base 10 calculation: ";
+        cin >> num1;
+        double bl = log10(num1);
+        cout << "Logarithm with Base 10: " << bl << endl;
+	
+}
+void absol()
+{
+	cout << "Enter a negative value for absolute number:";
+        cin >> num1;
+	double absl = abs(num1);
+	cout <<"absolute :"<< absl <<endl;
+	
+}
+void Sine() 
+{
+	cout << "Enter a number for sine calculation: ";
+        cin >> num1;
+        double s = sin(num1);
+        cout << "Sine : " << s << endl;
+	
+}
+void Cos() 
+{
+	cout << "Enter a number for cosine calculation: ";
+        cin >> num1;
+        double c = cos(num1);
+        cout << "Cosine : " << c << endl;
+	
+}
+
+void Tan() 
+{
+	cout << "Enter a number for tangent calculation: ";
+        cin >> num1;
+        double t = tan(num1);
+        cout << "Tangine : " << t << endl;
+	
+}
+void rnd()
+{
+	cout << "Enter a number for round calculation: ";
+        cin >> num1;
+    	double rnd = round(num1);
+    	cout << "round:" << rnd << endl;
+
+}
+};
+
+class angle
+{
+        public:
+        long double deg,rad;
+        double deg_rad()
+        {
+            cout<<endl<<"Enter Number in Degree :";
+            cin>>deg;
+            deg=deg*(3.14/180);
+            cout<<endl<<"Degree to Radian :"<<deg<<endl;
+            return 1;
+        }
+        double rad_deg()
+        {
+            cout<<endl<<"Enter Number is Radian :";
+            cin>>rad;
+            rad=rad*(180/3.14);
+            cout<<endl<<"Radian to Degree :"<<rad<<endl;
+            return 1;
+        }
+    };
+
+class conarea
+{
+    public:
+    float m,cm;
+    void msq()
+    {
+	    cout << endl <<" Convert 'm^2' into 'cm^2'"<<endl;
+	    cout << "--------------------------------------------------"<<endl;	
+    	cout << " Input in meter^2 : ";
+    	cin >> m;
+	    cm = (m*10000);
+    	cout << " The conversion in cm^2 is: "<< cm << "cm^2" <<endl;
+    }
+    void cmsq()
+    {
+    	cout << endl <<" Convert 'cm^2' into 'm^2' "<<endl;
+	    cout << "--------------------------------------------------"<<endl;	
+    	cout << " Input in centimeter^2 : ";
+    	cin >> cm;
+    	m = (cm/10000);
+    	cout << "The distance in m^2 is: " << m << "m^2" <<endl;
+    }
+};
+
+class memory
+{
+    public:
+    long double no,ans1,ans2,ans3,ans4;
+    char temp;
+    double bit()
+    {
+        
+            cout<<endl<<"Enter Values in Bit : ";
+            cin>>no;
+            ans1 = no/ 8;
+            ans2 = no/ 8 / 1024;
+            ans3 = no / 8 / 1024 / 1024;
+            cout<<endl<<"Bit into Bytes: "<<ans1<<endl;
+            cout<<"Bit into KiloBytes: "<<ans2<<endl;
+            cout<<"Bit into GigaBytes: "<<ans3<<endl;
+            
+            return 1;
+        
+    }
+   
+    double byte()
+    {
+       
+            cout<<endl<<"Enter Value in Bytes: ";
+            cin>>no;
+            ans1 = no*8;
+            ans2 = no/1024;
+            ans3 = no/(1024 * 1024);
+            ans4 = no/(1024 * 1024 * 1024);
+            cout<<endl<<"Bytes into Bits: "<<ans1<<endl;
+            cout<<"Bytes into Kilobytes: "<<ans2<<endl;
+            cout<<"Bytes into Megabytes: "<<ans3<<endl;
+            cout<<"Bytes into GigaBytes: "<<ans4<<endl;
+           
+                return 1;
+            
+    }
+   
+    double kilobyte()
+    {
+       
+            cout<<endl<<"Enter Value in KiloBytes: ";
+            cin>>no;
+            ans1 = no*1024;
+            ans2 = no/1024;
+            ans3 = no/(1024 * 1024);
+            cout<<endl<<"Kilobytes into Bytes: "<<ans1<<endl;
+            cout<<"Kilobytes into MegaBytes: "<<ans2<<endl;
+            cout<<"Kilobytes into GigaBytes: "<<ans3<<endl;
+            
+                return 1;
+            
+    }
+   
+    double megabyte()
+    {
+       
+            cout<<endl<<"Enter Value in MegaBytes: ";
+            cin>>no;
+            ans1 = no*1024;
+            ans2 = no/1024;
+            ans3 = no/(1024 * 1024);
+            cout<<endl<<"Megabytes into KiloBytes: "<<ans1<<endl;
+            cout<<"Megabytes into GigaBytes: "<<ans2<<endl;
+            cout<<"Megabytes into TeraBytes: "<<ans3<<endl;
+           
+                return 1;
+            
+        
+    }
+   
+    double gigabyte()
+    {
+       
+            cout<<endl<<"Enter Value in GigaBytes: ";
+            cin>>no;
+            ans1 = no*1024*1024;
+            ans2 = no*1024;
+            ans3 = no/1024;
+            cout<<endl<<"Gigabytes into KiloBytes: "<<ans1<<endl;
+            cout<<"Gigabytes into MegaBytes: "<<ans2<<endl;
+            cout<<"Gigabytes into TeraBytes: "<<ans3<<endl;
+           
+                return 1;
+            
+        
+    }
+   
+    double terabyte()
+    {
+        
+            cout<<endl<<"Enter Value in Terabyte: ";
+            cin>>no;
+            ans1 = no*1024;
+            ans2 = no*1024000;
+            cout<<endl<<"TeraBytes into GigaByytes: "<<ans1<<endl;
+            cout<<"TeraBytes into MegaBytes: "<<ans2<<endl;
+           
+                return 1;
+            
+    }
+};
+
+class Energy
+{
+        public:
+        long double j,kj,wh,kwh;
+        double J()
+        {
+            cout<<"Enter Energy in Joules :";
+            cin>>j;
+            kj=j*0.001;
+            wh=j*0.000277778;
+            cout<<"Joules => Kilojoules :"<<kj<<endl;
+            cout<<"Joules => Watt Hours :"<<wh<<endl; 
+            return 1;
+        }
+        double KJ()
+        {
+            cout<<"Enter Energy in Kilojoules :";
+            cin>>kj;
+            j=kj*1000;
+            wh=kj*0.277778;
+            kwh=kj*0.000277778;
+            cout<<"Kilojoules => Joules :"<<j<<endl;
+            cout<<"Kilojoules => Watt Hours :"<<wh<<endl;
+            cout<<"Kilojoules => Kilowatt Hours :"<<kwh<<endl;
+        
+            return 1;
+        }
+        
+        double WH()
+        {
+            cout<<"Enter Energy in Watt Hours :";
+            cin>>wh;
+            j=wh*3600;
+            kj=wh*3.6;
+            kwh=wh*0.001;
+            cout<<"Watt Hours => Joules :"<<j<<endl;
+            cout<<"Watt Hours => Kilojoules :"<<kj<<endl;
+            cout<<"Watt Hours => Kilowatt Hours :"<<kwh<<endl;
+            
+            return 1;
+        }
+        
+        double KWH()
+        {
+            cout<<"Enter Energy in Kilowatt Hours :";
+            cin>>kwh;
+            kj=kwh*3600;
+            wh=kwh*1000;
+            cout<<"Kilowatt Hours => Kilojoules :"<<kj<<endl;
+            cout<<"Kilowatt Hours => Watt Hours :"<<wh<<endl;
+            
+            return 1;
+        }
+        
+    };
+    
+class conlen 
+{
+    public:
+    float km, m,cm,in;
+    double cmto()
+    {
+    cout<<"------------------------------------------------------------------------------"<<endl;  
+	cout<<" Convert centimeter into meter and kilometer :"<<endl;
+	cout << "--------------------------------------------------"<<endl;	
+    	cout << " Input the distance in centimeter : ";
+    	cin >> cm;
+	m = (cm/100); 
+	km = (cm/100000);
+	in = (cm/2.54);
+	cout << " The conversion in meter is: "<< m << "m" <<endl;
+	cout << " The conversion in kilometer is: "<< km << "km"<< endl;	
+    cout << " The conversion in inches is: "<< in << "inches"<<endl;
+    return 1;
+    }
+    double mto()
+    {
+         cout<<"------------------------------------------------------------------------------"<<endl;  
+    	cout<<" Convert meter into centimeter and kilometer :"<<endl;
+	    cout << "--------------------------------------------------"<<endl;	
+    	cout << " Input the distance in meter : ";
+    	cin >> m;
+    	cm = (m*100);
+    	km = (m/1000);
+   	    cout << "The distance in centimeter is: " << cm << "cm" <<endl;
+    	cout << "The distance in Kilometer is: " << km << "km" <<endl;
+    	return 1;
+    }
+    double kmto()
+    {
+         cout<<"------------------------------------------------------------------------------"<<endl;  
+    	cout<<" Convert kilometer into centimeter and meter :"<<endl;
+	    cout << "--------------------------------------------------"<<endl;	
+    	cout << " Input the distance in kilometer : ";
+    	cin >> km;
+    	cm = (km*100000);
+    	m = (km*1000);
+    	cout << "The distance in centimeter is: " << cm << "cm" <<endl;
+    	cout << "The distance in meter is: " << m << "m" <<endl;
+    	return 1;
+    }
+    double inch()
+    {
+         cout<<"------------------------------------------------------------------------------"<<endl;  
+    	cout<<" Convert inches into centimeter and meter :"<<endl;
+	    cout << "--------------------------------------------------"<<endl;	
+    	cout << " Input in inches : " ;
+    	cin >> in;
+    	cm = (in*2.54);
+    	m = (in/39.37);
+    	cout << "The conversion in centimeter is: " << cm << "cm" <<endl;
+    	cout << "The conversion in meter is: " << m << "m" <<endl;
+    	return 1;
+    }
+};    
+
+class mass
+{
+        public:
+        long double gms,kgms,pou,ton;
+        
+        double gm()
+        {
+            cout<<endl<<"Give Value in Grams :";
+            cin>>gms;
+            kgms=gms/1000;
+            pou=gms*0.00220462;
+            cout<<endl<<" Grams => Kilograms :"<<kgms;
+            cout<<endl<<" Grams => Pounds :"<<pou<<endl;
+            return 1;
+        }
+        
+       
+        
+        double kg()
+        {
+            cout<<endl<<"Give Value in Kilograms :";
+            cin>>kgms;
+            pou=kgms*2.2;
+            ton=kgms*0.001;
+            cout<<endl<<" Kilograms => Pounds  : "<<pou;
+            cout<<endl<<" Kilograms => Tons  : "<<ton<<endl;
+            return 1;
+        }
+        
+        double p()
+        {
+            cout<<endl<<"Give Value in Pounds :";
+            cin>>pou;
+            kgms=pou/2.2;
+            ton=pou/2000;
+            cout<<endl<<" Pounds => kilograms  : "<<kgms;
+            cout<<endl<<" Pounds => Tons  : "<<ton<<endl;
+            return 1;
+        }
+        
+        
+        double t()
+        {
+            cout<<endl<<"Give Value in Tons :";
+            cin>>ton;
+            kgms=ton*1000;
+            pou=ton*2000;
+            cout<<endl<<" Tons => Kilograms  : "<<kgms;
+            cout<<endl<<" Tons => Pounds  : "<<pou<<endl;
+            return 1;
+        }
+        
+    };
+
+class speed
+{
+        public:
+        long double m1,m2,km1,mil1;
+        double m_s()
+        {
+            cout<<"Enter Speed in Meter Per Seconds :";
+            cin>>m1;
+            m2=m1*3600;
+            km1=(m1*3600)/1000;
+            cout<<"Meter Per Seconds => Meter Per Hour :"<<m2<<endl;
+            cout<<"Meter Per Seconds => Kilometer Per Hour :"<<km1<<endl; 
+            return 1;
+        }
+        double m_h()
+        {
+            cout<<"Enter Speed in Meter Per Hour :";
+            cin>>m2;
+            km1=m2/1000;
+            mil1=m2*0.000621371;
+            cout<<"Meter Per Hour => Kilometer Per Hour :"<<km1<<endl;
+            cout<<"Meter Per Hour => Miles Per Hour :"<<mil1<<endl;
+        
+            return 1;
+        }
+        
+        double km_h()
+        {
+            cout<<"Enter Speed in Kilometer Per Hour :";
+            cin>>km1;
+            m2=km1*1000;
+            mil1=km1*0.621371;
+            cout<<"Kilometer Per Hour => Meter Per Hour :"<<m2<<endl;
+            cout<<"Kilometer Per Hour => Miles Per Hour :"<<mil1<<endl;
+            
+            return 1;
+        }
+        
+        double miles_h()
+        {
+            cout<<"Enter Speed in Miles Per Hour :";
+            cin>>mil1;
+            m2=mil1*1609.34;
+            km1=mil1*1.60934;
+            cout<<"Miles Per Hour => Meter Per Hour :"<<m2<<endl;
+            cout<<"Miles Per Hour => Kilometer Per Hour :"<<km1<<endl;
+            
+            return 1;
+        }
+        
+    };
+    
+class Temperature
+{
+    public:
+    double fe,ce;
+    double fe_to_ce()
+    {
+      cout<<endl<<"Enter temperature in Farenheit: ";
+      cin>>fe;
+      ce = (fe - 32)/1.8;
+      cout<<endl<<"Temperature in Celsius: "<<ce<<" °C"<<endl;
+      return 1;
+    }
+
+   double ce_to_fe()
+    {
+      cout<<endl<<"Enter temperature in Celcius: ";
+      cin>>ce;
+      fe = (ce * 9.0/5.0) + 32.0;
+      cout<<endl<<"Temperature in Farenheit: "<<fe<<" °F"<<endl;
+      return 1;
+    }
+};
+
+class Time
+{
+        public:
+        long double ms1,s1,m1,h1,d1;
+        
+        double ms_1()
+        {
+            cout<<endl<<"Enter Value in Milliseconds :";
+            cin>>ms1;
+            s1 = ms1 * 0.001;
+            m1 = ms1 * 0.0000166667;
+            cout<<endl<<" Milliseconds => Seconds :"<<s1<<endl;
+            cout<<" Milliseconds => Minutes :"<<m1<<endl;
+            return 1;
+        }
+        
+       
+        
+        double s_1()
+        {
+            cout<<endl<<"Enter Value in Seconds :";
+            cin>>s1;
+            ms1 = s1 * 1000;
+            m1 = s1 * 0.0166667;
+            cout<<endl<<" Seconds => Milliseconds :"<<ms1<<endl;
+            cout<<" Seconds => Minutes :"<<m1<<endl;
+            return 1;
+        }
+        
+        double m_1()
+        {
+            cout<<endl<<"Enter Value in Minutes :";
+            cin>>m1;
+            s1 = m1 * 60;
+            h1 = m1 * 0.0166667;
+            cout<<endl<<" Minutes => Seconds :"<<s1<<endl;
+            cout<<" Milliseconds => Hours :"<<h1<<endl;
+            return 1;
+        }
+        
+        
+        double h_1()
+        {
+            cout<<endl<<"Enter Value in Hours :";
+            cin>>h1;
+            m1 = h1 * 60;
+            d1 = h1 * 0.0416667;
+            cout<<endl<<" Hours => Minutes :"<<m1<<endl;
+            cout<<" Hours => Days :"<<d1<<endl;
+            return 1;
+        }
+        
+        double d_1()
+        {
+            cout<<endl<<"Enter Value in Days :";
+            cin>>d1;
+            m1 = d1 * 1440;
+            h1 = d1 * 24;
+            cout<<endl<<" Days => Miuntes :"<<m1<<endl;
+            cout<<" Days => Hours :"<<h1<<endl;
+            return 1;
+        }
+        
+    };
+
+class convol
+{
+    public:
+    float l,ml,cm,m;
+    double lit()
+    {
+	
+    	cout << " Input in Litres : ";
+    	cin >> l;
+    	ml = (l*1000);
+    	cm = (l*1000);
+    	m = (l/1000);
+    	cout << " The conversion of 'litres' into 'mililitres' is : "<< ml << " Ml"<< endl;	
+	    cout << " The conversion of 'litres' into 'cm^3' is : "<< cm <<" Cm^3" << endl;
+	    cout << " The conversion of 'litres' into 'm^3' is : "<< m <<" M^3" << endl;
+	    return 1;
+    }
+    double mlit()
+    {
+    	
+    	cout << " Input in Mililitres : ";
+    	cin >> ml;
+    	l = (ml/1000);
+    	cm = ml;
+    	m = (ml/1000000);
+    	cout << "The conversion of 'Mililitres' into 'litres' is : " << l << " L" <<endl;
+    	cout << "The conversion of 'Mililitres' into 'cm^3' is : " << cm << " Cm^3" <<endl;
+    	cout << "The conversion of 'Mililitres' into 'm^3' is : " << m << " M^3" <<endl;
+    	return 1;
+    }
+    double cmtr()
+    {
+    	
+    	cout << " Input in cubic centimeter : ";
+    	cin >> cm;
+    	l = (cm/1000);
+    	ml = cm;
+    	m = (cm/1000000);
+    	cout << "The conversion of 'cm^3' into 'litres' is : " << l << " L" <<endl;
+    	cout << "The conversion of 'cm^3' into 'Mililitres' is : " << ml << " Ml" <<endl;
+     	cout << "The conversion of 'cm^3' into 'm^3' is : " << m << "M^3" <<endl;
+     	return 1;
+    }
+};
+
+
+
+int main()
+{
+    char Cal,ch,temp;
+    char op;
+    char Con;
+    char z;
+    char y;
+    char e;
+    char w;
+    char temp1;
+    char d;
+    
+    float num1, num2;
+    char data;
+    
+    double num3;
+    
+    //char op;
+    //float num1, num2;
+    //char op;
+    //char op;
+    //float num1, num2;
+    
+    
+    
+    
+    
+    
+                                            // Get the dimensions of the terminal
+                                    int width = 114, height = 7;
+                                
+                                    // Get the text to display
+                                    string text = "DEVELOPED BY : STUDENTS OF DIPLOMA [ 3rd SEM ]";
+                                
+                                    // Calculate the padding to center the text
+                                    int padding = (width - text.length()) / 2;
+                                
+                                    // Print the top of the box
+                                    for (int i = 0; i < width; i++) {
+                                        cout << "_";
+                                    }
+                                    cout << endl;
+                                
+                                    // Print the sides of the box
+                                    for (int i = 1; i < height - 1; i++) {
+                                        cout << "|";
+                                        if (i == (height - 1) / 2) {
+                                            for (int j = 1; j < padding; j++) {
+                                                cout << " ";
+                                            }
+                                            cout << text;
+                                            for (int j = padding + text.length(); j < width - 1; j++) {
+                                                cout << " ";
+                                            }
+                                        } else {
+                                            for (int j = 1; j < width - 1; j++) {
+                                                cout << " ";
+                                            }
+                                        }
+                                        cout << "|" << endl;
+                                    }
+                                
+                                    // Print the bottom of the box
+                                    for (int i = 0; i < width; i++) {
+                                        cout << "_";
+                                    }
+                                    cout << endl << endl << endl;
+                                    
+                                    cout<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" ~~~ DEVELOPER : Urva Pandya        *** DESIGNER & LAYOUT PLANNER  *** "<<endl <<endl;
+                                    cout<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" ~~~ DEVELOPER : Rishi Parmar       *** TESTES & DEBUGGER ***"<<endl << endl;
+                                    cout<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" ~~~ DEVELOPER : Dhrumilsinh Rathod     *** PROJECT LEADER & SUPPORTER ***"<<endl;
+                                           
+    
+while(true)
+{    
+    start_of_loop: 
+    cout << endl << endl;
+    cout<<"------------------------------------------------------------------------------"<<endl;
+    cout<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<"****** CALCULATORS & CONVERTORS ******" <<endl; 
+     cout<<"------------------------------------------------------------------------------"<<endl;
+    
+    cout<<"------------------------------------------------------------------------------"<<endl;
+    cout<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<"Enter '1' => NORMAL CALCULATOR " <<endl; 
+     cout<<"------------------------------------------------------------------------------"<<endl;
+     cout<<"------------------------------------------------------------------------------"<<endl;
+    cout<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<"Enter '2' => SCIENTIFIC CALCULATOR " <<endl; 
+     cout<<"------------------------------------------------------------------------------"<<endl;
+     cout<<"------------------------------------------------------------------------------"<<endl;
+    cout<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<"Enter '3' => CONVERTORS " <<endl; 
+     cout<<"------------------------------------------------------------------------------"<<endl;
+     cout<<"------------------------------------------------------------------------------"<<endl;
+    cout<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" Enter 'Q' => Quit " <<endl; 
+     cout<<"------------------------------------------------------------------------------"<<endl;
+    
+    cout<<" Select Any One :";
+    cin>>Cal;
+    cout<<endl;
+switch(Cal)
+{
+while(Cal!='q' || Cal!='Q')
+{   
+
+
+case '1':
+{
+    start_normal:
+    while(true)
+    {
+    normal N;
+     cout<<"------------------------------------------------------------------------------"<<endl;
+    cout<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" NORMAL CALCULATOR " <<endl; 
+     cout<<"------------------------------------------------------------------------------"<<endl;
+   
+       
+                   cout<<"Press '1' for Addition [+] "<<endl;
+                      cout<<"---------------------------------------"<<endl;
+                    cout<<"Press '2' for Subtraction [-] "<<endl; 
+                      cout<<"---------------------------------------"<<endl;
+                    cout<<"Press '3' for Multiplication [*]  "<<endl;
+                       cout<<"---------------------------------------"<<endl;
+                    cout<<"Press '4' for Division [/] "<<endl; 
+                       cout<<"---------------------------------------"<<endl;
+                    cout<<"Press '5' for Modulus [%] "<<endl; 
+                       cout<<"--------------- ------------------------"<<endl;
+                    cout<<" Press 'X' to Exit Calculator "<<endl;
+                        cout<<"---------------------------------------"<<endl<<endl;
+                    cout<<" Conversion Selected : ";
+                        cin>>ch;
+                    cout<<endl;
+                
+                switch(ch)
+                {
+                        while(ch!='x' || ch!='X')
+                        {
+                                case '1':
+                                {
+                            
+                                        N.add();
+                                        while(true)
+                                        {
+                                            cout<<endl<<"---------------------------------------"<<endl;
+                                            cout<<"Press 'C' to Continue "<<endl;
+                                            cout<<"---------------------------------------"<<endl;
+                                            cout<<"press 'X' to  Exit "<<endl;
+                                            cout<<"---------------------------------------"<<endl;
+                                            cout<<endl<<" Conversion Selected :";
+                                            cin>>temp;
+                                            if(temp=='c' || temp=='C')
+                                            {
+                                                N.add_2();
+                                            }
+                                          
+                                            else 
+                                            {
+                                                cout<<endl<<"Exiting..... !!"<<endl;
+                                                    goto start_normal;      
+                                            }
+                                        }
+                            
+                                }
+                                    
+                                case '2':
+                                {    
+                                    
+                                            N.sub();
+                                            while(true)
+                                            {
+                                                cout<<endl<<"---------------------------------------"<<endl;
+                                                cout<<"Press 'C' to Continue "<<endl;
+                                                cout<<"---------------------------------------"<<endl;
+                                                cout<<"press 'X' to  Exit "<<endl;
+                                                cout<<"---------------------------------------"<<endl;
+                                                cout<<endl<<" Conversion Selected :";
+                                                cin>>temp;
+                                                if(temp=='c' || temp=='C')
+                                                {
+                                                    N.sub_2();
+                                                }
+                                                
+                                                else 
+                                                {
+                                                    cout<<endl<<"Exiting..... !!"<<endl;
+                                                        goto start_normal;
+                                                }  
+                                            }
+                                    
+                                
+                                }
+                                
+                                case '3':
+                                {
+                                
+                                        N.mul();
+                                        while(true)
+                                        {
+                                            cout<<endl<<"---------------------------------------"<<endl;
+                                            cout<<"Press 'C' to Continue "<<endl;
+                                            cout<<"---------------------------------------"<<endl;
+                                            cout<<"press 'X' to  Exit "<<endl;
+                                            cout<<"---------------------------------------"<<endl;
+                                            cout<<endl<<" Conversion Selected :";
+                                            cin>>temp;
+                                            if(temp=='c' || temp=='C')
+                                            {
+                                                N.mul_2();
+                                            }
+                                            
+                                            else 
+                                            {
+                                                cout<<endl<<"Exiting..... !!"<<endl;
+                                                goto start_normal;
+                                            }  
+                                        }
+                                             
+
+                                }
+                                    
+                                case '4':
+                                {
+                                        N.di();
+                                        while(true)
+                                        {
+                                            cout<<endl<<"---------------------------------------"<<endl;
+                                            cout<<"Press 'C' to Continue "<<endl;
+                                            cout<<"---------------------------------------"<<endl;
+                                            cout<<"press 'X' to  Exit "<<endl;
+                                            cout<<"---------------------------------------"<<endl;
+                                            cout<<endl<<" Conversion Selected :";
+                                            cin>>temp;
+                                            if(temp=='c' || temp=='C')
+                                            {
+                                                N.di_2();
+                                            }
+                                          
+                                            else 
+                                            {
+                                                cout<<endl<<"Exiting..... !!"<<endl;
+                                                 goto start_normal;
+                                            }  
+                                        }
+                                
+                                
+                                }
+                                
+                                case '5':
+                                {
+                                        N.mod();
+                                        while(true)
+                                        {
+                                            cout<<endl<<"---------------------------------------"<<endl;
+                                            cout<<"Press 'C' to Continue "<<endl;
+                                            cout<<"---------------------------------------"<<endl;
+                                            cout<<"press 'X' to  Exit "<<endl;
+                                            cout<<"---------------------------------------"<<endl;
+                                            cout<<endl<<" Conversion Selected :";
+                                            cin>>temp;
+                                            if(temp=='c' || temp=='C')
+                                            {
+                                                N.mod_2();
+                                            }
+                                           
+                                            else 
+                                            {
+                                                cout<<endl<<"Exiting..... !!"<<endl;
+                                                 goto start_normal;
+                                            }  
+                                        }
+                                            
+                                }
+                                
+                                case 'x':
+                                case 'X':
+                                {
+                                    
+                                        if(ch=='x' || ch=='X')
+                                        {
+                                            cout<<endl<<"Exiting.....!! "<<endl;
+                                            goto start_of_loop;
+                                        }
+                            
+                                }
+                            
+                                
+                                default :
+                                {
+                                
+                                    cout<<endl<<"Please Select Valid Number "<<endl;
+                                    break;
+                                }
+                        }
+                
+                }
+             
+        }
+            
+            
+}
+
+   
+case '2':
+{    
+    while (true)  
+{
+    sc calculator;
+  
+    cout<<"------------------------------------------------------------------------------"<<endl;
+    cout<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" SCIENTIFIC CALCULATOR " <<endl; 
+     cout<<"------------------------------------------------------------------------------"<<endl;
+    
+
+     cout<<"------------------------------------------------------------------------------"<<endl;  
+    cout<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<"CHOOSE YOUR OPERATION"<<endl;
+     cout<<"------------------------------------------------------------------------------"<<endl;  
+    cout<<"Press '1' for Square "<<endl;
+       cout<<"-------------------------------"<<endl;
+    cout<<"Press '2' for Squareroot "<<endl; 
+      cout<<"-------------------------------"<<endl; 
+    cout<<"Press '3' for Cube "<<endl;
+        cout<<"-------------------------------"<<endl;
+    cout<<"Press '4' for Cuberoot "<<endl; 
+       cout<<"-------------------------------"<<endl;
+    cout<<"Press '5' for Power "<<endl; 
+      cout<<"-------------------------------"<<endl;  
+    cout<<"Press '6' for Exponentional "<<endl;
+      cout<<"-------------------------------"<<endl;
+    cout<<"Press '7' for Log "<<endl;
+      cout<<"-------------------------------"<<endl;
+    cout<<"Press '8' for Base Log "<<endl;
+       cout<<"-------------------------------"<<endl;
+    cout<<"Press '9' for Absolute value "<<endl;
+       cout<<"-------------------------------"<<endl; 
+    cout<<"Press 'S' for Sine"<<endl;
+       cout<<"-------------------------------"<<endl;
+    cout<<"Press 'C' for Cosine"<<endl;
+      cout<<"-------------------------------"<<endl;  
+    cout<<"Press 'T' for Tangine"<<endl;
+       cout<<"-------------------------------"<<endl;
+    cout<<"Press 'R' for Round"<<endl;
+       cout<<"-------------------------------"<<endl; 
+    cout<<"Press 'X' to Exit Scientific Calculator "<<endl;
+      cout<<"-------------------------------"<<endl;
+      cout<<endl;
+    cout<<endl<<" Conversion Selected : ";
+    cin >> op;
+    cout<<endl;
+    switch (op) 
+  {
+  
+    while(op!='x' || op!='X')
+    {
+        case '1':
+	    {
+            calculator.Square();      
+            break;
+	    }
+        case '2':
+        {
+            calculator.Sqroot();
+            break;
+        }
+	    case '3':
+	    {
+    	    calculator.cube();
+    	    break;
+	    }
+        case '4':
+	    {
+            calculator.cbroot();
+            break;
+	    }
+        case '5':
+	    {
+            calculator.power();
+            break;
+	    }
+        case '6':
+	    {
+	        calculator.expo();
+            break;
+	    }
+        case '7':
+	    {
+            calculator.Log();
+            break;
+	    }
+        case '8':
+        {    
+	        calculator.BaseLog();
+            break;
+        }
+        case '9':
+        {  
+	        calculator.absol();
+            break;
+        }
+        case 's':
+        case 'S':
+        {    
+    	    calculator.Sine();
+            break;
+        }
+        case 'c':
+        case 'C':
+        {    
+	        calculator.Cos();
+            break;
+        }
+        case 't':
+        case 'T':
+        {
+            calculator.Tan();
+            break;
+        }
+        case 'r':
+        case 'R':
+        {   
+	        calculator.rnd();
+            break;
+        }
+        case 'x':
+        case 'X':
+        {
+            if(op=='x' || op=='X')
+            {
+                cout<<endl<<"Exiting....!"<<endl;
+                goto start_of_loop;
+            }
+            
+        }
+        default:
+        {
+            cout << "Please Enter Valid Number " << endl;
+            break;
+        }
+     }
+    }
+
+}    
+   
+       
+    
+}
+   
+   
+case '3':
+{
+    
+        start_of_con:
+        
+        while(true)
+        {
+             cout<<"------------------------------------------------------------------------------"<<endl;
+            cout<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" CONVERTORS " <<endl; 
+            cout<<"------------------------------------------------------------------------------"<<endl;
+            cout<<"------------------------------------------------------------------------------"<<endl;  
+            cout<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<"CHOOSE YOUR OPERATION"<<endl;
+            cout<<"------------------------------------------------------------------------------"<<endl; 
+            cout<<"----------------------------------------------------------------"<<endl;
+            cout<<"Press '1' for ANGLE CONVERTER"<<endl;
+            cout<<"----------------------------------------------------------------"<<endl;
+            cout<<"----------------------------------------------------------------"<<endl;
+            cout<<"Press '2' for AREA CONVERTER"<<endl;
+            cout<<"----------------------------------------------------------------"<<endl;
+            cout<<"----------------------------------------------------------------"<<endl;
+            cout<<"Press '3' for DATA CONVERTER"<<endl;
+            cout<<"----------------------------------------------------------------"<<endl;
+            cout<<"----------------------------------------------------------------"<<endl;
+            cout<<"Press '4' for ENERGY CONVERTER"<<endl;
+            cout<<"----------------------------------------------------------------"<<endl;
+            cout<<"----------------------------------------------------------------"<<endl;
+            cout<<"Press '5' for LENGTH CONVERTER"<<endl;
+            cout<<"----------------------------------------------------------------"<<endl;
+            cout<<"----------------------------------------------------------------"<<endl;
+            cout<<"Press '6' for MASS CONVERTER"<<endl;
+            cout<<"----------------------------------------------------------------"<<endl;
+            cout<<"----------------------------------------------------------------"<<endl;
+            cout<<"Press '7' for SPEED CONVERTER"<<endl;
+            cout<<"----------------------------------------------------------------"<<endl;
+            cout<<"----------------------------------------------------------------"<<endl;
+            cout<<"Press '8' for TEMPERATURE CONVERTER"<<endl;
+            cout<<"----------------------------------------------------------------"<<endl;
+            cout<<"----------------------------------------------------------------"<<endl;
+            cout<<"Press '9' for TIME CONVERTER"<<endl;
+            cout<<"----------------------------------------------------------------"<<endl;
+            cout<<"----------------------------------------------------------------"<<endl;
+            cout<<"Press 'V' for VOLUME CONVERTER"<<endl;
+            cout<<"----------------------------------------------------------------"<<endl;
+            cout<<"----------------------------------------------------------------"<<endl;
+            cout<<"Press 'X' to Exit CONVERTORS"<<endl;
+            cout<<"----------------------------------------------------------------"<<endl;
+            cout<<endl;
+            cout<<endl<<" Conversion Selected : ";
+            cin>>Con;
+            cout<<endl;
+            switch(Con)
+            {
+                while(Con!='x')
+                {
+                    
+                    case '1':
+                    {
+                        
+                         angle A1;
+       
+                         while(true)
+                        {
+                        
+                        cout<<"----------------------------------------------------------------"<<endl;
+                        cout<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<"ANGLE CONVERTER"<<endl;
+                        cout<<"----------------------------------------------------------------"<<endl;
+                       
+                            cout<<endl<<"---------------------------------------"<<endl;
+                            cout<<"***  Choose One Convertion  ***"<<endl;
+                            cout<<"---------------------------------------"<<endl;
+                            cout<<" Press 'D' to convert Degree to Radian"<<endl;
+                            cout<<"---------------------------------------"<<endl;
+                            cout<<" Press 'R' to convert Radian to Degree"<<endl;
+                            cout<<"---------------------------------------"<<endl;
+                            cout<<" Press 'X' to Exit Angle converter "<<endl;
+                            cout<<"---------------------------------------"<<endl;
+                            
+                            cout<<endl<<" Conversion Selected : ";
+                            cin>>z;
+                            cout<<endl;
+                                    switch(z)
+                                    {
+                                        
+                                           while(z!='x')
+                                            {
+                                                case 'd':
+                                                case 'D':
+                                                {
+                                                    A1.deg_rad();
+                                                    break;
+                                                }   
+                                                case 'r':
+                                                case 'R':
+                                                {
+                                                    A1.rad_deg();
+                                                    break;
+                                                }   
+                                                case 'x':
+                                                case 'X':
+                                                {
+                                                    if(z=='x' || z=='X')
+                                                    {
+                                                    
+                                                       cout<<endl<<endl<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" Exiting......!"<<endl;
+                                                       goto start_of_con;
+                                                    }
+                                                }   
+                                                default :
+                                                {
+                                                
+                                                    cout<<" Invalid Choose is Founded.....";
+                                                    break;
+                                                }
+                                            }
+                                     }
+                            
+                        }
+                        
+                        
+                    }
+                    
+                    case '2':
+                    {
+                        conarea ar;
+                       
+                      while (true)
+                      {
+                              cout<<"----------------------------------------------------------------"<<endl;
+                        cout<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<"AREA CONVERTER"<<endl;
+                        cout<<"----------------------------------------------------------------"<<endl;
+                            cout<<endl<<"---------------------------------------"<<endl;
+                            cout<<"***  Choose One Convertion  ***"<<endl;
+                            cout<<"---------------------------------------"<<endl;
+                            cout << "Press '1' for 'm^2' into 'cm^2' conversion:" << endl;
+                            cout<<"---------------------------------------"<<endl;
+                            cout << "Press '2' for 'cm^2' into 'm^2'conversion:" << endl;
+                            cout<<"---------------------------------------"<<endl;
+                            cout << "Press 'X' to exit:" << endl;
+                            cout<<"---------------------------------------"<<endl;
+                            cout<<" Conversion Selected :";
+                            cin >> op;
+                          switch(op)
+                          {
+                                  while(op!='x' || op!='X')
+                                  {
+                                                 
+                                         case '1':
+                                         {
+                                            ar.msq();
+                                            break;
+                                         }
+                                        case '2':
+                                        {
+                                           ar.cmsq();
+                                            break;
+                                        }
+                                        case 'x':
+                                        case 'X':
+                                        {
+                                            if(op=='x' || op=='X')
+                                            {
+                                                cout<<endl<<"Exiting.....!"<<endl;
+                                                goto start_of_con;
+                                            }
+                                        }
+                                        default:
+                                        {
+                                            cout <<endl<<"Please Select Valid Number "<< endl;
+                                            break;
+                                        }
+                                    }
+                           
+                            }
+                        }
+                        
+                    }
+                
+                    case '3':
+                    {
+                                    memory m;
+                                    while(true)
+                                    {
+                                            cout<<"----------------------------------------------------------------"<<endl;
+                                                cout<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<"DATA CONVERTER"<<endl;
+                                                cout<<"----------------------------------------------------------------"<<endl;
+                                                cout<<endl<<"---------------------------------------"<<endl;
+                                                cout<<"***  Choose One Convertion  ***"<<endl;
+                                                cout<<"---------------------------------------"<<endl;
+                                                cout<<" Press '1' to convert Bits into Bytes , Kilobytes & GigaBytes "<<endl;
+                                                cout<<"---------------------------------------"<<endl;
+                                                cout<<" Press '2' to convert Bytes into Bits , Kilobytes , Megabytes & GigaBytes "<<endl;
+                                                cout<<"---------------------------------------"<<endl;
+                                                cout<<" Press '3' to convert Kilobytes into Bytes , MegaBytes & GigaBytes "<<endl;
+                                                cout<<"---------------------------------------"<<endl;
+                                                cout<<" Press '4' to convert Megabytes into KiloBytes , GigaBytes & TeraBytes"<<endl;
+                                                cout<<"---------------------------------------"<<endl;
+                                                 cout<<" Press '5' to convert Gigabytes into KiloBytes ,  MegaBytes & TeraBytes"<<endl;
+                                                cout<<"---------------------------------------"<<endl;
+                                                 cout<<" Press '6' to convert TeraBytes into  MegaBytes & GigaByytes "<<endl;
+                                                cout<<"---------------------------------------"<<endl;
+                                                cout<<" Press 'X' to Exit Data converter "<<endl;
+                                                cout<<"---------------------------------------"<<endl;
+                                                cout<<endl<<" Conversion Selected : ";
+                                                cin>>data;
+                                                cout<<endl;
+                                        switch(data)
+                                        {
+                                            while(data!='x' || data!='X')
+                                            {
+                                                    case '1':
+                                                    {
+                                                        m.bit();
+                                                        break;
+                                                    }   
+                                                    case '2':
+                                                    {
+                                                        m.byte();
+                                                        break;
+                                                    }   
+                                                    case '3':
+                                                    {
+                                                        m.kilobyte();
+                                                        break;
+                                                    }   
+                                                    case '4':
+                                                    {
+                                                        m.megabyte();
+                                                        break;
+                                                    }   
+                                                    case '5':
+                                                    {
+                                                        m.gigabyte();
+                                                        break;
+                                                    }   
+                                                    case '6':
+                                                    {
+                                                        m.terabyte();
+                                                        break;
+                                                    }   
+                                                    case 'x':
+                                                    case 'X':
+                                                    {
+                                                        if(data=='x' || data=='X')
+                                                        {
+                                                            cout<<endl<<" Exiting......!"<<endl;
+                                                            goto start_of_con;
+                                                        }
+                                                    }
+                                                    default:
+                                                    {
+                                                        cout<<endl<<"Please Select Valid Number"<<endl;
+                                                        break;
+                                                    }   
+                                            }
+                                        }
+                                    }
+                        
+                        
+                        
+                        
+                        
+                    }
+                    
+                    case '4':
+                    {
+                        
+                                    Energy E1;
+       
+       
+                                        while(true)
+                                        {
+                                             cout<<"----------------------------------------------------------------"<<endl;
+                                            cout<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<"ENERGY CONVERTER"<<endl;
+                                            cout<<"----------------------------------------------------------------"<<endl;
+                                            cout<<endl<<"---------------------------------------"<<endl;
+                                            cout<<"***  Choose One Convertion  ***"<<endl;
+                                            cout<<"---------------------------------------"<<endl;
+                                            cout<<" Press '1' to convert 'Joules' into kilojoules & Watt Hours"<<endl;
+                                            cout<<"---------------------------------------"<<endl;
+                                            cout<<" Press '2' to convert 'Kilojoules' into Joules , Watt Hours & Kilowatt Hours"<<endl;
+                                             cout<<"---------------------------------------"<<endl;
+                                            cout<<" Press '3' to convert 'Watt Hours' into Joules , Kilojoules & Kilowatt Hours"<<endl;
+                                             cout<<"---------------------------------------"<<endl;
+                                            cout<<" Press '4' to convert 'Kilowatt Hours' into Kilojoules & Watt Hours"<<endl;
+                                            cout<<"---------------------------------------"<<endl;
+                                            cout<<" Press 'X' to Exit Speed Converter "<<endl;
+                                            cout<<"---------------------------------------"<<endl;
+                                            
+                                            cout<<endl<<" Conversion Selected : ";
+                                            cin>>e;
+                                            cout<<endl;
+                                                    switch(e)
+                                                    {
+                                                        
+                                                           while(e!='x' || e!='X')
+                                                            {
+                                                                case '1':
+                                                                {
+                                                                    E1.J();
+                                                                    break;
+                                                                }   
+                                                                case '2':
+                                                                {
+                                                                    E1.KJ();
+                                                                    break;
+                                                                }
+                                                                case '3':
+                                                                {
+                                                                    E1.WH();
+                                                                    break;
+                                                                }
+                                                                case '4':
+                                                                {
+                                                                    E1.KWH();
+                                                                    break;
+                                                                }
+                                                                    
+                                                                case 'x':
+                                                                case 'X':
+                                                                {
+                                                                    if(e=='x' || e=='X')
+                                                                    {
+                                                                    
+                                                                       cout<<endl<<endl<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" Exiting......!"<<endl;
+                                                                       goto start_of_con;
+                                                                    }
+                                                                }   
+                                                                default :
+                                                                {
+                                                                    cout<<endl<<"Please Select Valid Number"<<endl;
+                                                                    break;
+                                                                }
+                                                            }
+                                                     }
+                                            
+                                        }
+                        
+                        
+                    }
+                    
+                    case '5':
+                    {
+                            conlen len;
+   
+                              while (true)
+                              {
+                                  cout<<"------------------------------------------------------------------------------"<<endl;  
+                                cout<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<"LENGTH CONVERTOR"<<endl;
+                                 cout<<"------------------------------------------------------------------------------"<<endl;  
+                                 cout<<endl;
+                                 cout<<"------------------------------------------------------------------------------"<<endl;  
+                                  cout << "Press '1' for 'cm' into m,km and inches conversion:" << endl;
+                                  cout<<"------------------------------------------------------------------------------"<<endl;  
+                                  cout << "Press '2' for 'm' into cm and km conversion:" << endl;
+                                  cout<<"------------------------------------------------------------------------------"<<endl;  
+                                  cout << "Press '3' for 'km' into cm and m conversion:" << endl;
+                                  cout<<"------------------------------------------------------------------------------"<<endl;  
+                                  cout << "Press '4' for 'inches' into cm and m conversion" << endl;
+                                  cout<<"------------------------------------------------------------------------------"<<endl;  
+                                  cout << "Press 'X' to Exit LENGTH CONVERTOR " << endl;
+                                  cout<<"------------------------------------------------------------------------------"<<endl;  
+                                  cout<<" Conversion Selected :";
+                                  cin>>op;
+                                  cout<<endl;
+                                  switch(op)
+                                  {
+                                      while(op!='X' || op!='x')
+                                      {
+                                            case '1':
+                                             {
+                                                len.cmto();
+                                                break;
+                                             }
+                                              
+                                            case '2':
+                                            {
+                                                len.mto();
+                                                break;
+                                            }
+                                            
+                                            case '3':
+                                            {
+                                                len.kmto();
+                                                break;
+                                            }
+                                            
+                                            case '4':
+                                             {
+                                                len.inch();
+                                                break;
+                                             }
+                                             
+                                            case 'x':
+                                            case 'X':
+                                             { 
+                                                if(op=='x' || op=='X')
+                                                {
+                                                    cout<<endl<<"Exiting....!"<<endl;
+                                                    goto start_of_con;
+                                                }
+                                             }
+                                             
+                                            default:
+                                            {
+                                                cout <<endl<< " Please Select Valid Number " << endl;
+                                                break;
+                                            }
+                                      }
+                                    
+                                  }
+                            }
+                
+                        
+                        
+                    
+                    }
+                    
+                    case '6':
+                    {
+                         mass A2;
+        
+                            while(true)
+                            {
+                                cout<<"----------------------------------------------------------------"<<endl;
+                                cout<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<"MASS CONVERTER"<<endl;
+                                cout<<"----------------------------------------------------------------"<<endl;
+                                cout<<endl<<"---------------------------------------"<<endl;
+                                cout<<"***  Choose One Convertion  ***"<<endl;
+                                cout<<"---------------------------------------"<<endl;
+                                cout<<" Press '1' to convert Grams into Kilograms & Pounds"<<endl;
+                                cout<<"---------------------------------------"<<endl;
+                                cout<<" Press '2' to convert Kilograms into Pounds & Tons"<<endl;
+                                cout<<"---------------------------------------"<<endl;
+                                cout<<" Press '3' to convert Pounds into Kilograms & Tons"<<endl;
+                                cout<<"---------------------------------------"<<endl;
+                                cout<<" Press '4' to convert Tons into Kilograms & Pounds"<<endl;
+                                cout<<"---------------------------------------"<<endl;
+                                cout<<" Press 'X' to Exit Mass converter "<<endl;
+                                cout<<"---------------------------------------"<<endl;
+                                cout<<" Conversion Selected : ";
+                                cin>>y;
+                                cout<<endl;
+                                        switch(y)
+                                        {
+                                            
+                                               while(y!='x' || y!='X')
+                                                {
+                                                    case '1':
+                                                    {    
+                                                        A2.gm();
+                                                        break;
+                                                    }
+                                                    
+                                                    case '2':
+                                                    {    
+                                                        A2.kg();
+                                                        break;
+                                                    }
+                                                    
+                                                    case '3':
+                                                    {    
+                                                        A2.p();
+                                                        break;
+                                                    }
+                                                    
+                                                    case '4':
+                                                    {    
+                                                        A2.t();
+                                                        break;
+                                                    }
+                                                    
+                                                    case 'x':
+                                                    case 'X':
+                                                    {
+                                                        if(y=='x' || y=='X')
+                                                        {
+                                                        
+                                                           cout<<endl<<" Exiting......!"<<endl;
+                                                           goto start_of_con;
+                                                           
+                                                        }
+                                                    }   
+                                                    
+                                                    default :
+                                                    {
+                                                        cout<<endl<<"Please Select Valid Number"<<endl;
+                                                        break;
+                                                    }
+                                                }
+                                                
+                                         }
+                                
+                            }
+                        
+                        
+                        
+                    }
+                    
+                    case '7':
+                    {
+                        speed S1;
+       
+                                    while(true)
+                                    {
+                                        cout<<"----------------------------------------------------------------"<<endl;
+                                        cout<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<"SPEED CONVERTER"<<endl;
+                                        cout<<"----------------------------------------------------------------"<<endl;
+                                        cout<<endl<<"---------------------------------------"<<endl;
+                                        cout<<"***  Choose One Convertion  ***"<<endl;
+                                        cout<<"---------------------------------------"<<endl;
+                                        cout<<" Press '1' to convert M/S into M/H & KM/H"<<endl;
+                                        cout<<"---------------------------------------"<<endl;
+                                        cout<<" Press '2' to convert M/H into KM/H & MIL/H"<<endl;
+                                        cout<<"---------------------------------------"<<endl;
+                                        cout<<" Press '3' to convert KM/H into M/H & MIL/H"<<endl;
+                                        cout<<"---------------------------------------"<<endl;
+                                        cout<<" Press '4' to convert MIL/H into M/H & KM/H"<<endl;
+                                        cout<<"---------------------------------------"<<endl;
+                                        cout<<" Press 'X' to Exit Speed Converter "<<endl;
+                                        cout<<"---------------------------------------"<<endl;
+                                        cout<<endl<<" Conversion Selected : ";
+                                        cin>>w;
+                                        cout<<endl;
+                                                switch(w)
+                                                {
+                                                    
+                                                       while(w!='x' || w!='X')
+                                                        {
+                                                            case '1':
+                                                            {
+                                                                S1.m_s();
+                                                                break;
+                                                            }
+                                                            
+                                                            case '2':
+                                                            {
+                                                                S1.m_h();
+                                                                break;
+                                                            }
+                                                            case '3':
+                                                            {
+                                                                S1.km_h();
+                                                                break;
+                                                            }
+                                                            
+                                                            case '4':
+                                                            {
+                                                                S1.miles_h();
+                                                                break;
+                                                            }
+                                                                
+                                                            case 'x':
+                                                            case 'X':
+                                                            {
+                                                                if(w=='x' || w=='X')
+                                                                {
+                                                                
+                                                                   cout<<endl<<" Exiting......!"<<endl;
+                                                                   goto start_of_con;
+                                                                }
+                                                            }
+                                                            
+                                                            default :
+                                                            {
+                                                                cout<<endl<<"Please Enter Valid Number"<<endl;
+                                                                break;
+                                                            }
+                                                            
+                                                        }
+                                                 }
+                                        
+                                    }
+                        
+                        
+                        
+                    }
+                    
+                    case '8':
+                    {
+                                Temperature T;
+  
+                                  while(true)
+                                  {
+                                            cout<<"----------------------------------------------------------------"<<endl;     
+                                            cout<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<"TEMPERATURE CONVERTER"<<endl;
+                                            cout<<"----------------------------------------------------------------"<<endl<<endl; 
+                                            cout<<"---------------------------------------"<<endl;
+                                            cout<<"***  Choose One Convertion  ***"<<endl;
+                                            cout<<"---------------------------------------"<<endl;
+                                            cout<<"Press '1' for Farenheit to Celcius"<<endl;
+                                            cout<<"---------------------------------------"<<endl;
+                                            cout<<"Press '2' for Celcius to Farenheit"<<endl;
+                                            cout<<"---------------------------------------"<<endl;
+                                            cout<<"Press 'X' for Exiting..."<<endl;
+                                            cout<<"---------------------------------------"<<endl;
+                                
+                                            cout<<endl<<" Conversion Selected : ";
+                                            cin>>temp1;
+                                            cout<<endl;    
+                                              switch (temp1)
+                                                {
+                                                    while(temp1!='x' || temp1!='X')
+                                                    {
+                                                          case '1':
+                                                          {
+                                                           T.fe_to_ce();
+                                                           break;
+                                                          }
+                                                          
+                                                          case '2':
+                                                          {
+                                                           T.ce_to_fe();
+                                                           break;
+                                                          }
+                                                          
+                                                          case 'x':
+                                                          case 'X':
+                                                          {
+                                                            if(temp1=='x' || temp1=='X')
+                                                            {
+                                                                cout<<endl<<"Exiting.....!"<<endl;
+                                                                goto start_of_con;
+                                                            }
+                                                        
+                                                          }
+                                                          default :
+                                                          {
+                                                           cout<<endl<<"Please Enter Valid Number"<<endl;
+                                                           break;
+                                                          }
+                                                       }
+                                                }
+                                  }
+                     
+                     
+                        
+                    }
+                    
+                    case '9':
+                    {
+                        
+                             Time T1;
+       
+                                while(true)
+                                {
+                                    cout<<"----------------------------------------------------------------"<<endl;
+                                    cout<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<"TIME CONVERTER"<<endl;
+                                    cout<<"----------------------------------------------------------------"<<endl;
+                                    cout<<endl<<"---------------------------------------"<<endl;
+                                    cout<<"***  Choose One Convertion  ***"<<endl;
+                                    cout<<"---------------------------------------"<<endl;
+                                    cout<<" Press '1' to convert Milliseconds into Seconds & Minutes"<<endl;
+                                    cout<<"---------------------------------------"<<endl;
+                                    cout<<" Press '2' to convert Seconds into Milliseconds & Minutes"<<endl;
+                                    cout<<"---------------------------------------"<<endl;
+                                    cout<<" Press '3' to convert Minutes into Seconds & Hours"<<endl;
+                                    cout<<"---------------------------------------"<<endl;
+                                    cout<<" Press '4' to convert Hours into Minutes & Days"<<endl;
+                                    cout<<"---------------------------------------"<<endl;
+                                    cout<<" Press '5' to convert Days into Minutes & Hours"<<endl;
+                                    cout<<"---------------------------------------"<<endl;
+                                    cout<<" Press 'X' to Exit Mass Converter "<<endl;
+                                    cout<<"---------------------------------------"<<endl;
+                                    cout<<endl;
+                                    cout<<endl<<"Conversion Selected : ";
+                                    cin>>d;
+                                
+                                            switch(d)
+                                            {
+                                                
+                                                   while(d!='x' || d!='X')
+                                                    {
+                                                        
+                                                        case '1':
+                                                         {   
+                                                            T1.ms_1();
+                                                            break;
+                                                         }
+                                                         
+                                                        case '2':
+                                                         {   
+                                                            T1.s_1();
+                                                            break;
+                                                         }
+                                                         
+                                                        case '3':
+                                                         {   
+                                                            T1.m_1();
+                                                            break;
+                                                         }
+                                                         
+                                                        case '4':
+                                                         {   
+                                                            T1.h_1();
+                                                            break;
+                                                         }
+                                                         
+                                                        case '5':
+                                                        {
+                                                            T1.d_1();
+                                                            break;
+                                                        }   
+                                                            
+                                                        case 'x':
+                                                        case 'X':
+                                                        {
+                                                            if(d=='x' || d=='X')
+                                                            {
+                                                            
+                                                               cout<<endl<<" Exiting......!"<<endl;
+                                                               goto start_of_con;
+                                                               
+                                                            }
+                                                        }
+                                                        
+                                                        default :
+                                                        {
+                                                            cout<<endl<<"Please Enter Valid Number"<<endl;
+                                                            break;
+                                                        }
+                                                        
+                                                    }
+                                             }
+                                    
+                                }
+                        
+                        
+                    }
+                    
+                    case 'v':
+                    case 'V':
+                    {
+                         convol vol;
+   
+
+                                  while (true)
+                                  {
+                                      cout<<"------------------------------------------------------------------------------"<<endl;  
+                                    cout<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<"VOLUME CONVERTER"<<endl;
+                                     cout<<"------------------------------------------------------------------------------"<<endl;  
+                                      cout << ">Press '1' for Litres into Mililitres , Cubic Centimeter and Cubic Meter " << endl;
+                                           cout<<"------------------------------------------------------------------------------"<<endl;  
+                                      cout << ">Press '2' for Mililitre into Litre , Cubic Centimeter and Cubic Meter " << endl;
+                                           cout<<"------------------------------------------------------------------------------"<<endl;  
+                                      cout << ">Press '3' for Cubic Centimeter into Litre , Mililitre and Cubic Meter " << endl;
+                                           cout<<"------------------------------------------------------------------------------"<<endl;
+                                      cout << ">Press 'X' to Exit Volume Converter:" << endl;
+                                       cout<<"------------------------------------------------------------------------------"<<endl;  
+                                       cout<<endl;
+                                       cout<<"Conversion Selected :";
+                                      cin >> op;
+                                      cout<<endl;
+                                      switch(op)
+                                      {
+                                          while(op!='x' || op!='X')
+                                          {
+                                                  case '1':
+                                                  {
+                                                    vol.lit();
+                                                    break;
+                                                  }
+                                                case '2':
+                                                {
+                                                    vol.mlit();
+                                                    break;
+                                                }
+                                                case '3':
+                                                {
+                                                    vol.cmtr();
+                                                    break;
+                                                }
+                                                case 'x':
+                                                case 'X':
+                                                {
+                                                    if(op=='x' || op=='X')
+                                                    {
+                                                        cout<<endl<<"Exiting....!"<<endl;
+                                                        goto start_of_con;
+                                                    }
+                                                }
+                                                default:
+                                                {
+                                                    cout <<endl<< " Please Enter Valid Number " << endl;
+                                                    break;
+                                                }
+                                          }
+                                      }
+                                }
+                        
+                        
+                    }
+                    
+                   
+                    case 'x':
+                    case 'X':
+                    {
+                         if(Con=='x' || Con=='X')
+                        {
+                                    
+                            cout<<endl<<" Exiting......!"<<endl;
+                            goto start_of_loop;
+                        }
+                    }
+                    
+                    default :
+                    {
+                        
+                        cout<<endl<<"Please Enter Valid Number...!"<<endl;
+                        break;
+                    }
+                
+                
+                
+                }
+                
+            }
+       
+            
+            
+            
+            
+       }
+       
+       
+   }
+
+   
+case 'q':
+case 'Q':
+{
+    
+       if(Cal=='q' || Cal=='Q')
+       {
+           cout<< endl << endl;
+           cout<<"Quiting the Calculators & Convertors.....!";
+           
+           return 1;
+       }
+       
+   }
+
+   
+default:
+{
+       cout<<endl<<"Please Enter Valid Number"<<endl;
+       break;
+   }
+ 
+  
+}  
+
+   
+}
+
+
+}
+
+
+
+ return 0;   
+}
